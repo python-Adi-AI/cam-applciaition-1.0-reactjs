@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'
+// import Home from './Components/Home/Home'
+// import Navbar from './Components/Navbar/Navbar'
+// import Footer from './Components/Footer/Footer'
 
-function App() {
+// import "./assets/css/main.css"
+// import Inventery from './OneSolution/Commercial/Inventery/Inventery'
+
+// const App = () => {
+//   return (
+// <>
+
+// <Navbar />
+// <Home />
+
+// <Inventery />
+// <Footer />
+// </>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Inventery from './OneSolution/Commercial/Inventery/Inventery';
+
+import './assets/css/main.css';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/inventery" element={<Inventery />} />
+          {/* Add more routes as needed */}
+        </Routes>
+        <Footer />
+      </>
+    </Router>
   );
-}
+};
 
 export default App;
+

@@ -1,0 +1,35 @@
+/* src/Footer.css */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust the height as needed */
+    background-color: #282828; /* Darker background color for better contrast */
+    color: #ffffff; /* White text color for better visibility */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for a raised effect */
+    z-index: 1000; /* Ensure the footer is above other elements */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 16px; /* Slightly larger font size for better readability */
+    font-weight: 500; /* Medium weight for better legibility */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      height: auto; /* Allow the height to adjust for smaller screens */
+      padding: 15px;
+    }
+  
+    .footer p {
+      font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+  }
+  

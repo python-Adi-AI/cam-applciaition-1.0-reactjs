@@ -1,0 +1,35 @@
+/* src/Home.css */
+
+body {
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text if needed */
+    position: relative; /* Position for absolute overlay */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container::before {
+    content: ''; /* Create a pseudo-element for the overlay */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    bottom: 0; /* Stretch to the bottom */
+    background: rgba(255, 255, 255, 0.7); /* White overlay with some transparency */
+    backdrop-filter: blur(1px); /* Apply blur effect */
+    z-index: 1; /* Ensure the overlay is above the background */
+}
+
+.image-container img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 0; /* Send image behind the overlay */
+    position: relative; /* Position relative to the overlay */
+}
