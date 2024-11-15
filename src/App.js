@@ -35,6 +35,7 @@ import Footer from './Components/Footer/Footer';
 import Inventery from './OneSolution/Commercial/Inventery/Inventery';
 
 import './assets/css/main.css';
+import WorkOrderPlanning from './OneSolution/Commercial/WorkOrder Planning/WorkOrderPlanning';
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/inventery" element={<Inventery />} />
+          <Route path="/WorkOrderPlanning" element={<WorkOrderPlanning />} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer />

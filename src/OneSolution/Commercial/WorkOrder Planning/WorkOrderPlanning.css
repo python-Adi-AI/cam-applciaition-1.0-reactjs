@@ -1,0 +1,11 @@
+.table-container {
+    max-height: 400px;  /* Adjust based on your desired height */
+    overflow-y: auto;   /* Enable vertical scroll */
+  }
+  
+  .active > .page-link, .page-link.active {
+    z-index: 3;
+    color: white;
+    background-color: teal;
+    border-color: whitesmoke;
+  }

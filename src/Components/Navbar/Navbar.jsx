@@ -76,7 +76,12 @@ const Navbar = () => {
               <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">Review</a>
               <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">Review New</a>
               <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">CheckList Review</a>
-              <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">WorkOrder Planning</a>
+
+
+              
+              <Link className="dropdown-item" to="/WorkOrderPlanning">WorkOrder Planning</Link>
+              
+            
               <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">Inventory Audit</a>
               <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">KItem History</a>
               <a className="dropdown-item" href="http://99.99.99.30/EPC/dashboard.xhtml?dswid=-6991">WorkOrder Category</a>
